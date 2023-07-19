@@ -1,124 +1,68 @@
-# Book Search Engine
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Description
+## Available Scripts
 
-This app enables readers to search for new books and keep a list for future purchases. 
+In the project directory, you can run:
 
----
+### `yarn start`
 
-## App functionality
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-GIVEN a book search engine
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-WHEN I load the search engine
+### `yarn test`
 
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-WHEN I click on the Search for Books menu option
+### `yarn build`
 
-THEN I am presented with an input field to search for books and a submit button
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-WHEN I am not logged in and enter a search term in the input field and click the submit button
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-WHEN I click on the Login/Signup menu option
+### `yarn eject`
 
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-WHEN the toggle is set to Signup
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-WHEN the toggle is set to Login
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-THEN I am presented with two inputs for an email address and a password and login button
+## Learn More
 
-WHEN I enter a valid email address and create a password and click on the signup button
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-THEN my user account is created and I am logged in to the site
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-WHEN I enter my account’s email address and password and click on the login button
+### Code Splitting
 
-THEN I the modal closes and I am logged in to the site
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-WHEN I am logged in to the site
+### Analyzing the Bundle Size
 
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-WHEN I am logged in and enter a search term in the input field and click the submit button
+### Making a Progressive Web App
 
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-WHEN I click on the Save button on a book
+### Advanced Configuration
 
-THEN that book’s information is saved to my account
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-WHEN I click on the option to see my saved books
+### Deployment
 
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-WHEN I click on the Remove button on a book
+### `yarn build` fails to minify
 
-THEN that book is deleted from my saved books list
-
-WHEN I click on the Logout button
-
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
-
----
-
-## Table of Contents
-
-  <ul>
-    <li>
-      <a href="#description">Description</a>
-    </li>
-    <li>
-      <a href="#app-functionality">App functionality</a>
-    </li>
-    <li>
-      <a href="#demo">Demo</a>
-    </li>
-    <li>
-        <a href="#questions">Questions</a>
-    </li>
-    <li>
-        <a href="#acknowledgments">Acknowledgements</a>
-    </li>
-  </ul>
-
----
-
-## Demo
-
-You can check out the app following [this link.](https://google-books-search-engine.herokuapp.com)
-
-This video demonstrates app functionality when a user signs up.
-
-https://user-images.githubusercontent.com/111567114/235399815-2c097ac5-1446-4fa8-aae1-63593a058ce9.mov
-
----
-
-## Questions
-
-If you have any questions regarding this project, please don't hesitate to contact me using my email address: pomyateevav@gmail.com. You can find my project repositories here: [veronika-pomy](https://github.com/veronika-pomy?tab=repositories).
-
----
-
-## Acknowledgments
-
-This list includes resources used for the project.
-
-- [Apollo GraphQL](https://www.apollographql.com/docs/)
-- [bcrypt](https://www.npmjs.com/package/bcrypt)
-- [Best README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
-- [concurrently](https://www.npmjs.com/package/concurrently)
-- [Express](https://expressjs.com/)
-- [Heroku](https://devcenter.heroku.com/)
-- [JWT](https://jwt.io/)
-- [MongoDB](https://www.mongodb.com/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://react.dev/)
-
-<p align="right">(<a href="#book-search-engine">back to top</a>)</p>
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
