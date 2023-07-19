@@ -1,7 +1,7 @@
 # Book-Search-Engine
 
 ## Description
-
+This is a book search engine application. You can search for books.
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## Demo
 
-You can check out the app following [this link.]()
+
 
 
 
@@ -40,8 +40,7 @@ You can check out the app following [this link.]()
 
 ## Questions
 
-If you have any questions regarding this project, please don't hesitate to contact me using my email address: pomyateevav@gmail.com. You can find my project repositories here: [).
-
+If you have any questions regarding this project, please don't hesitate to contact me using my email address: zlatelinarizova@gmail.com. 
 ---
 
 ## Acknowledgments
