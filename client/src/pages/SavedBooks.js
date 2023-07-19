@@ -13,9 +13,9 @@ const SavedBooks = () => {
   const [ deleteBook ] = useMutation(REMOVE_BOOK);
 
   const userData = data?.me || [];
-  
+  // console.log(userData);
 
-  
+  // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
 
     const token = Auth.loggedIn() ? Auth.getToken() : null;
@@ -25,20 +25,20 @@ const SavedBooks = () => {
     }
 
     try {
-      
+      // const response = await deleteBook(bookId, token);
       const { data } = await deleteBook({
         variables: { bookId }
       });
 
 
-      
+      // upon success, remove book's id from localStorage
       removeBookId(bookId);
     } catch (err) {
       console.error(err);
     }
   };
 
-  
+  // if data isn't here yet, say so
   if (loading) {
     return <h2>LOADING...</h2>;
   }
@@ -47,7 +47,7 @@ const SavedBooks = () => {
     <>
       <Jumbotron fluid className='text-light bg-dark'>
         <Container>
-          <h1>View books</h1>
+          <h1>Viewing saved books!</h1>
         </Container>
       </Jumbotron>
       <Container>
@@ -67,7 +67,7 @@ const SavedBooks = () => {
                   <p className='small'>Authors: {book.authors}</p>
                   <Card.Text>{book.description}</Card.Text>
                   <Button className='btn-block btn-danger' onClick={() => handleDeleteBook(book.bookId)}>
-                    Delete Book
+                    Delete this Book!
                   </Button>
                 </Card.Body>
               </Card>
