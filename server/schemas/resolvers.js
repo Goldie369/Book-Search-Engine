@@ -4,7 +4,7 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
-      // get single user
+      
         me: async (parent, args, context) => {
             if (context.user) {
               return User.findOne({ _id: context.user._id }).populate('savedBooks');
@@ -14,22 +14,22 @@ const resolvers = {
     },
 
     Mutation: {
-        // create a user and sign a token, then return them
+        
         addUser: async (parent, { username, email, password }) => {
           const user = await User.create({ username, email, password });
           const token = signToken(user);
           return { token, user };
         },
-        // log in user, find by email
+        
         login: async (parent, { email, password }) => {
         const user = await User.findOne ( { email } );
         
-        // check if user exists 
+        
         if (!user) {
             throw new AuthenticationError('Wrong login credentials.');
           }
     
-        // check password 
+        
         const correctPw = await user.isCorrectPassword(password);
 
         if (!correctPw) {
