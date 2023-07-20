@@ -6,7 +6,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import { GET_ME } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
 
-
+//The component uses GraphQL queries and mutations to fetch and remove books from the user's saved books list//
 const SavedBooks = () => {
   
   const { loading, data } = useQuery(GET_ME);
