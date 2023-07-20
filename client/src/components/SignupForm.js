@@ -4,7 +4,7 @@ import Auth from '../utils/auth';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
-
+//The form collects user data, such as username, email, and password, performs basic validation, and submits the data using a GraphQL mutation to create a new user account.
 const SignupForm = () => {
   
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
