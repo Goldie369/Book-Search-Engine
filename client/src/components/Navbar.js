@@ -5,7 +5,7 @@ import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 
 import Auth from '../utils/auth';
-
+// The navigation bar includes links to search for books, view saved books, and a login/sign-up modal that is displayed when the user is not logged in//
 const AppNavbar = () => {
   
   const [showModal, setShowModal] = useState(false);
