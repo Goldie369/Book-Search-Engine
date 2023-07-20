@@ -8,7 +8,7 @@ import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
 import { useMutation } from '@apollo/client';
 import { SAVE_BOOK } from '../utils/mutations';
-
+//The component allows users to search for books using the Google Books API, view search results, and save books to their list of saved books//
 const SearchBooks = () => {
   
   const [searchedBooks, setSearchedBooks] = useState([]);
